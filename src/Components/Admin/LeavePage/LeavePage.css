@@ -3,6 +3,7 @@
     margin: 0 auto;
     padding: 2rem 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F5EBE0;
 }
 
 .admin-leave-title {
@@ -60,8 +61,10 @@
 .applications-section {
     background-color: #f8f9fa;
     padding: 2rem;
+    height:90%;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
 }
 
 .applications-section h2 {
