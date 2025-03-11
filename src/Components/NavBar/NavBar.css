@@ -1,0 +1,107 @@
+.Navbar {
+    height: 100%;
+    width: 20%;
+    border-right: 2px solid rgb(166, 159, 159);
+    background-color: #edede9;
+    transition: width 0.5s ease;
+    position: relative;
+}
+
+.hide {
+    width: 5%;
+}
+
+.Logo {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.5s ease;
+}
+
+.Logo h1{
+    margin-left: 10%;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.btn {
+    height: 4%;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+    position: absolute;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.btn:hover {
+    cursor: pointer;
+    /* background-color: burlywood; */
+    transform: translateX(-50%);
+}
+
+.btn img {
+    height: 100%;
+    transition: height 0.5s ease;
+}
+
+.hide .btn {
+    width: 80%;
+    left: 50%;
+    /* Adjust button width when navbar is shrunk */
+}
+
+.hide .btn img {
+    height: 80%;
+}
+
+.container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+    /* Smooth transition for container */
+}
+
+.hide .container {
+    opacity: 0;
+    /* Hide container content when navbar is shrunk */
+}
+
+.logout {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logout button {
+    height: 50px;
+    width: 110px;
+    background-color: indianred;
+    border: none;
+    font-size: larger;
+    border-radius: 20px;
+    transition: opacity 0.5s ease;
+    cursor: pointer;
+    /* Smooth transition for logout button */
+}
+
+.hide .logout button {
+    opacity: 1;
+    /* Ensure logout button remains visible */
+}

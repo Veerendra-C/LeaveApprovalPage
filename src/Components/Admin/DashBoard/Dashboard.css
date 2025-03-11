@@ -1,0 +1,17 @@
+.Dashboard{
+    height: 100%;
+    width: 99%;
+    background-color: #adb5bd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Left{
+    height: 80%;
+    width: 80%;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

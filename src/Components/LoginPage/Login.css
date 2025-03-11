@@ -1,0 +1,26 @@
+.login{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5EBE0;
+}
+
+.login-box {
+    height: 50%;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10%;
+        background-color: #D5BDAF;
+}
+
+.login-box h1 {
+    text-align: center;
+    font-size: clamp(20px, 3vw, 2000px);
+}

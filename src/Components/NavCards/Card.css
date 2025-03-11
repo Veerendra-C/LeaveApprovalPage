@@ -1,0 +1,35 @@
+.card {
+    height: 7%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    border: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.center .icon{
+    transform: translateX(15px);
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    transform: scale(1.1);
+}
+
+.card p {
+    margin-left: 5%;
+    font-size: clamp(10px,1.5vw,200px);
+}
+
+.icon{
+    height: 100%;
+    width: 20%;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

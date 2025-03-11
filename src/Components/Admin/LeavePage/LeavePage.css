@@ -1,0 +1,282 @@
+.admin-leave-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-leave-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+/* Admin Dashboard Stats */
+.admin-dashboard {
+    margin-bottom: 2rem;
+}
+
+.admin-stats {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.stat-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.stat-count {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0;
+    color: white;
+}
+
+.stat-card.pending {
+    background-color: #3498db;
+}
+
+.stat-card.approved {
+    background-color: #2ecc71;
+}
+
+.stat-card.rejected {
+    background-color: #e74c3c;
+}
+
+/* Applications Section */
+.applications-section {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.applications-section h2 {
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.application-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    background-color: #f1f5f9;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #e2e8f0;
+}
+
+.filter-btn.active {
+    background-color: #3182ce;
+    color: white;
+}
+
+/* Application Cards */
+.application-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+}
+
+.application-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #cbd5e0;
+}
+
+.application-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.application-card.approved {
+    border-top-color: #2ecc71;
+}
+
+.application-card.rejected {
+    border-top-color: #e74c3c;
+}
+
+.application-card.pending {
+    border-top-color: #3498db;
+}
+
+.card-header {
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.student-details h3 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 1.1rem;
+}
+
+.reg-number {
+    color: #718096;
+    font-size: 0.9rem;
+    margin-top: 0.25rem;
+}
+
+.status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.status-badge.approved {
+    background-color: #c6f6d5;
+    color: #22543d;
+}
+
+.status-badge.pending {
+    background-color: #feebc8;
+    color: #744210;
+}
+
+.status-badge.rejected {
+    background-color: #fed7d7;
+    color: #822727;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.detail-row {
+    display: flex;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.detail-item {
+    flex: 1;
+    min-width: 0;
+}
+
+.detail-item.full-width {
+    flex: 0 0 100%;
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #4a5568;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.detail-value {
+    color: #2d3748;
+}
+
+.detail-value.reason {
+    display: block;
+    margin-top: 0.25rem;
+    color: #4a5568;
+    line-height: 1.5;
+}
+
+.card-actions {
+    padding: 1.25rem;
+    border-top: 1px solid #edf2f7;
+    display: flex;
+    gap: 1rem;
+}
+
+.action-btn {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.approve-btn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.approve-btn:hover {
+    background-color: #27ae60;
+}
+
+.reject-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #c0392b;
+}
+
+.action-info {
+    width: 100%;
+    text-align: center;
+    padding: 0.75rem;
+    background-color: #f1f5f9;
+    border-radius: 5px;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .admin-leave-container {
+        width: 95%;
+    }
+
+    .admin-stats {
+        flex-direction: column;
+    }
+
+    .stat-card {
+        width: 100%;
+    }
+
+    .application-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
