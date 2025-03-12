@@ -1,13 +1,13 @@
 .leave-container {
     width: 90%;
-    /* margin: 0 auto; */
+    height: 100%;
     padding: 2rem 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .leave-title {
     text-align: center;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
     color: #2c3e50;
 }
 
